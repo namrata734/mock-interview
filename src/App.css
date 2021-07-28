@@ -1,54 +1,51 @@
-#nav-brand{
+#nav-brand {
   color: #6d55f1;
   font-size: 50px;
   font-weight: bold;
 }
-#btn-outline{
+#btn-outline {
   border-color: #6d55f1;
   color: #6d55f1;
 }
-#btn-practice{
+#btn-practice {
   background-color: #6d55f1;
   border-color: #6d55f1;
   white-space: nowrap;
-   text-align: center;
-   border-radius: 5px;
+  text-align: center;
+  border-radius: 5px;
 }
 
-
-
 /* navbar span */
-.span{
+.span {
   color: rgb(35, 235, 35);
   font-size: 50px;
   font-weight: bold;
 }
 /* heading below navbar */
-.heading-starting{
-  
+.heading-starting {
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
-  padding-top: 10px ;
+  padding-top: 10px;
   padding-bottom: 10px;
-  
+
   color: #6d55f1;
   text-align: left;
 }
 
-.text-block{
-  
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    color: #000;
-    text-align: left;
+.text-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #000;
+  text-align: left;
 }
-#interview-with-mentor, #book-interview , #home {
+#interview-with-mentor,
+#book-interview,
+#home {
   font-family: Poppins;
 }
-#img-job-interview{
-  
+#img-job-interview {
   width: 393.83px;
   height: 295.37px;
   left: 662.32px;
@@ -57,40 +54,38 @@
 
 /* testimonals */
 
-.testimonals{
-  
+.testimonals {
   height: 200px;
   background: rgba(6, 204, 171, 0.37);
   border-radius: 10px;
 }
-#testimonal-box{
+#testimonal-box {
   height: 150px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.12), 4px 4px 8px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   font-size: 1rem;
 }
-#testimonal-name{
+#testimonal-name {
   color: #6d55f1;
   text-align: left;
-
 }
-#testimonal-company{
+#testimonal-company {
   color: rgb(35, 235, 35);
   text-align: left;
 }
-#testimonal-text{
+#testimonal-text {
   text-align: left;
   margin: 0;
 }
-#testimonal-img{
+#testimonal-img {
   width: 70px;
-  height:70px;
+  height: 70px;
   border-radius: 50%;
 }
 
 /* Column container */
-.row {  
+.row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -110,74 +105,72 @@
   padding: 20px;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
 /* interview with mentors */
 /* dropdown menu */
-#dropdown{
+#dropdown {
   padding: 10px;
   text-align: right;
-  
 }
 /* mentor card */
-#card{
-  border-radius:10px;
-  font-size:14px;
-  box-shadow: -4px -4px 8px rgba(112, 101, 101, 0.12), 4px 4px 8px rgba(0, 0, 0, 0.12);
+#card {
   border-radius: 10px;
- 
+  font-size: 14px;
+  box-shadow: -4px -4px 8px rgba(112, 101, 101, 0.12),
+    4px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }
-.item-container{
+.item-container {
   width: 30%;
   flex: auto;
   flex-direction: row;
   padding: 5px;
 }
 /*  right side image */
-#img-mentor{
+#img-mentor {
   width: 450px;
   height: 450px;
 }
 
 /* profile image */
-#mentor-img{
+#mentor-img {
   width: 40px;
-  height:40px;
+  height: 40px;
   border-radius: 50%;
 }
 
-#detail-of-person{
+#detail-of-person {
   padding: 10px;
   position: absolute;
-width: 500px;
-height: 350px;
-left: 576px;
-top: 144.8px;
-box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.12), 4px 4px 8px rgba(0, 0, 0, 0.12);
-border-radius: 10px;
-
+  width: 500px;
+  height: 350px;
+  left: 576px;
+  top: 144.8px;
+  box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.12), 4px 4px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }
 
-#set-time{
-margin-top: 20px;
-margin-left: 40px;
-width: 210px;
-height: 200px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border: 1px solid #7B61FF;
-border-radius: 8px;
+#set-time {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 210px;
+  height: 200px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #7b61ff;
+  border-radius: 8px;
 }
 /* calender */
 .react-calendar {
- 
   width: 300px;
   height: 325px;
   background: rgba(6, 204, 171, 0.13);
-border: 1px solid #7B61FF;
-border-radius: 8px;
+  border: 1px solid #7b61ff;
+  border-radius: 8px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1em;
 }
@@ -284,13 +277,13 @@ border-radius: 8px;
   background: #a9d4ff;
 }
 .react-calendar__tile--active {
-  background: #7B61FF;
+  background: #7b61ff;
   color: white;
   border-radius: 50%;
 }
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
-  background: #7B61FF;
+  background: #7b61ff;
 }
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;

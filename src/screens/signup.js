@@ -144,12 +144,12 @@ const Signup = ({ setAuth }) => {
 
                 <div style={{ "text-align": "right" }} className="p-1">
                   <label for="Domain" className="pr-4">
-                    *Domain:
+                    Domain:
                   </label>
                 </div>
                 <div style={{ "text-align": "right" }} className="p-1">
                   <label for="Skills" className="pr-4">
-                    *Skills:
+                    Skills:
                   </label>
                 </div>
                 <div style={{ "text-align": "right" }} className="p-1">
