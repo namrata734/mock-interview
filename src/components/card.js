@@ -25,7 +25,7 @@ const Card = (props) => {
             <div>Company: {props.company}</div>
             <div>Experience: {props.experience} Years</div>
             <div>Domain: {props.domain}</div>
-            <div>fee/session: {props.price}</div>
+            <div>fee/session: INR {props.price}</div>
             <a target="_blank" href={props.linkedin}>
               linkedIn link
             </a>

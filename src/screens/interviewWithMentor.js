@@ -12,14 +12,11 @@ const InterviewWithMentor = (props) => {
   const [filterdMentorList, setFilterdMentorList] = React.useState([]);
   let [company, setCompany] = React.useState([]);
   let [domain, setDomain] = React.useState([]);
-  let [role, setRole] = React.useState([]);
   let [filteredCompany, setFilteredCompany] = React.useState();
   let [filteredDomain, setFilteredDomain] = React.useState();
-  let [filteredRole, setFilteredRole] = React.useState();
   useEffect(() => {
     let companies = [];
     let domains = [];
-    let roles = [];
     fetch("https://heypm-backend-demo.herokuapp.com/interviewWithMentor")
       .then((response) => response.json())
       .then((data) => {
@@ -32,13 +29,9 @@ const InterviewWithMentor = (props) => {
           if (domains.indexOf(each.domain) == -1) {
             domains.push(each.domain);
           }
-          if (roles.indexOf(each.role) == -1) {
-            roles.push(each.role);
-          }
         });
         setCompany(companies);
         setDomain(domains);
-        setRole(roles);
       });
   }, []);
 
@@ -50,8 +43,7 @@ const InterviewWithMentor = (props) => {
     let filteredList = originalFilteredList.filter((each) => {
       return (
         each.company == value &&
-        (!filteredDomain || filteredDomain == each.domain) &&
-        (!filteredRole || filteredRole == each.role)
+        (!filteredDomain || filteredDomain == each.domain)
       );
     });
     setFilterdMentorList(filteredList);
@@ -65,22 +57,6 @@ const InterviewWithMentor = (props) => {
     let filteredList = originalFilteredList.filter((each) => {
       return (
         each.domain == value &&
-        (!filteredCompany || filteredCompany == each.company) &&
-        (!filteredRole || filteredRole == each.role)
-      );
-    });
-    setFilterdMentorList(filteredList);
-  };
-
-  const filterListForRole = (value) => {
-    let originalFilteredList = filteredRole
-      ? [...mentorList]
-      : [...filterdMentorList];
-    setFilteredRole(value);
-    let filteredList = originalFilteredList.filter((each) => {
-      return (
-        each.role == value &&
-        (!filteredDomain || filteredDomain == each.domain) &&
         (!filteredCompany || filteredCompany == each.company)
       );
     });
@@ -116,7 +92,6 @@ const InterviewWithMentor = (props) => {
                 setFilterdMentorList(jsonDATA);
                 setFilteredCompany(undefined);
                 setFilteredDomain(undefined);
-                setFilteredRole(undefined);
               }}
             >
               All
@@ -178,34 +153,6 @@ const InterviewWithMentor = (props) => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <div id="dropdown">
-            <Dropdown>
-              <Dropdown.Toggle
-                variant="outline-secondary"
-                id="dropdown-basic"
-                style={{
-                  "white-space": "nowrap",
-                  minWidth: "120px",
-                  fontSize: "14px",
-                }}
-              >
-                {filteredRole ? filteredRole : "Role"}
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                {role.map((each) => {
-                  return (
-                    <Dropdown.Item
-                      onClick={() => {
-                        filterListForRole(each);
-                      }}
-                    >
-                      {each}
-                    </Dropdown.Item>
-                  );
-                })}
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
         </div>
         {filterdMentorList && filterdMentorList.length > 0 ? (
           <div className="col-10 ">
@@ -237,7 +184,6 @@ const InterviewWithMentor = (props) => {
                 setFilterdMentorList(mentorList);
                 setFilteredCompany(undefined);
                 setFilteredDomain(undefined);
-                setFilteredRole(undefined);
               }}
             >
               Clear Filter
