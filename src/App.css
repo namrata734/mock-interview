@@ -14,6 +14,24 @@
   text-align: center;
   border-radius: 5px;
 }
+.top-btn{
+  margin-bottom: 30px;
+}
+.div-abc{
+  margin-left: 20p;
+}
+
+
+/*bottom buttons*/
+.abc-1{
+  padding-top: 30px;
+}
+.abc-2{
+  margin-left: 100px;
+  text-decoration-line: underline;
+  font-size: 18px;
+}
+
 
 /* navbar span */
 .span {
@@ -24,21 +42,28 @@
 /* heading below navbar */
 .heading-starting {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 36px;
   padding-top: 10px;
-  padding-bottom: 10px;
-
+  font-family: poppins;
   color: #6d55f1;
   text-align: left;
+  font-display: bold;
 }
 
 .text-block {
-  padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
-  color: #000;
+  color: #5A54E0;
   text-align: left;
+  font-family: poppins;
+  font-size: 16px;
+}
+.text-1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.text-2{
+  padding-bottom: 20px;
 }
 #interview-with-mentor,
 #book-interview,
@@ -55,9 +80,16 @@
 /* testimonals */
 
 .testimonals {
-  height: 200px;
-  background: rgba(6, 204, 171, 0.37);
+  padding-top: 40px;
+  height: 300px;
+  /*background: rgba(6, 204, 171, 0.37);*/
   border-radius: 10px;
+}
+.image-abc{
+  padding-top: 50 px;
+  padding-left: 100px;
+  height: 300px;
+  width: 80%;
 }
 #testimonal-box {
   height: 150px;
@@ -87,6 +119,7 @@
 
 /* Column container */
 .row {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -289,3 +322,4 @@ body {
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
 }
+

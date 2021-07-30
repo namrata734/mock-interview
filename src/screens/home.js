@@ -46,20 +46,24 @@ const Home = (props) => {
         <NavbarBeforeSignUp page="/" />
       )}
       {/* build actual products */}
+      
       <div className="row container-fluid">
         {/* left side */}
         <div className="col-6">
           <div className="heading-starting">
-            Build actual products that you can showcase to the world
+            Prepare for your Product Manager career
           </div>
           <div className="text-block">
-            Product Management is a hands-on role! We believe the best way to
-            learn & showcase your intent for a PM role is by building actual
-            products & living through the challenges of a real-life PM.
-            Theoretical readings/courses will only take you halfway through the
-            learning curve. So, we built <strong>heyPM</strong> to bridge that
-            gap & address the other half, to help you cross the finish line.
+          Prepare for your Interviews and get tips from Industry's best MENTORS!
           </div>
+          <div className="text-block text-1">
+          Get access to curated resources for your for your PRODUCT MANAGEMENT career.
+          </div>
+          <div className="text-block text-2">
+          No session fee for the first 50 bookings.<b>Hurry Up!</b><br></br>
+          Visit our 'Interview Substack' to learn from experiences.
+          </div>
+
           <div className="row">
             <div className="col-3 ml-5 p-3">
               <Button
@@ -89,8 +93,8 @@ const Home = (props) => {
       {/* testimonals */}
       <Testimonials />
       {/* links */}
-      <div className="row pl-3">
-        <div className="col-4">
+      <div className="row pl-3 abc-1">
+        <div className="col-4 abc-2">
           <a
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLScHw7xfAeZ3kiCocbeIU4vhMHrbPCWFp5lDiEegFOxCpg0USQ/viewform"
@@ -98,7 +102,7 @@ const Home = (props) => {
             Become a Mentor
           </a>
         </div>
-        <div className="col-4">
+        <div className="col-4 abc-2">
           <a
             target="_blank"
             href="https://heypm-interview-experience.webflow.io/share-your-interview"
@@ -106,11 +110,46 @@ const Home = (props) => {
             Submit Your Interview Experience
           </a>
         </div>
-        <div className="col-4">
-          <a href="">More Testimonals..</a>
-        </div>
+
+      </div>
+      <div className="div-abc">
+      <div className="row container-fluid top-btn">
+      <div className="row">
+            <div className="col-3 ml-5 p-3">
+              <Button
+                id="btn-practice"
+                className="btn"
+                href="https://heypm.glideapp.io/"
+              >
+                heyPM app
+              </Button>
+              <p className="text-block">Our app to get access to resources</p>
+            </div>
+            <div className="col-3 ml-5 p-3">
+              <Button
+                id="btn-practice"
+                className="btn"
+                href="https://anchor.fm/heypm"
+              >
+                togetherVproduct
+              </Button>
+              <p className="text-block">A podcast series for PM followers</p>
+            </div>
+            <div className="col-3 ml-5 p-3">
+              <Button
+                id="btn-practice"
+                className="btn"
+                href="https://heypm.substack.com/pm-resources"
+              >
+                PM Resources
+              </Button>
+              <p className="text-block">A repository of resources for PM</p>
+            </div>
+          </div>
+          </div>
       </div>
     </div>
+    
   );
 };
 
