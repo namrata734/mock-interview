@@ -86,9 +86,9 @@ const Home = (props) => {
           <img id="img-job-interview" src={image} alt="job interview image" />
         </div>
       </div>
-      {/* testimonals */}
-      <Testimonials />
-      {/* links */}
+      //{/* testimonals */}
+      //<Testimonials />
+      //{/* links */}
       <div className="row pl-3">
         <div className="col-4">
           <a
