@@ -49,7 +49,7 @@ const Home = (props) => {
 
       <div className="row container-fluid">
         {/* left side */}
-        <div className="col-8">
+        <div className="col-10">
           <div className="heading-starting">
             Prepare for your Product Manager career
           </div>
