@@ -54,7 +54,7 @@ const Home = (props) => {
             Prepare for your Product Manager career
           </div>
           <i>
-            <div className="text-block">
+            <div style={{ color: "#6d55f1" }}>
               Practice for your Interviews and get tips from Industry's best
               MENTORS!
             </div>
