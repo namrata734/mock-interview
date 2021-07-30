@@ -1,10 +1,10 @@
 import React from "react";
-import image from "../assets/PM.jpg";
+import image from "../assets/company.jpg";
 
 const Testimonials = () => {
   return (
     <div className="testimonals container-fluid ">
-      <div>Testimonals:</div>
+      /*<div>Testimonals:</div>
       <div className="row ml-2 pl-3 ">
         <div id="testimonal-box" className="col-5 m-3">
           <div className="row pl-2 pt-1">
@@ -30,7 +30,8 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>*/
+    <img src={image} alt="company logo" />
     </div>
   );
 };
