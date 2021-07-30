@@ -2,8 +2,8 @@ import React from "react";
 import image from "../assets/PM.jpg";
 
 const Testimonials = () => {
-  return ();
-    /*<div className="testimonals container-fluid ">
+  return (
+    <div className="testimonals container-fluid ">
       <div>Testimonals:</div>
       <div className="row ml-2 pl-3 ">
         <div id="testimonal-box" className="col-5 m-3">
@@ -32,7 +32,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-  );*/
+  );
 };
 
 export default Testimonials;
