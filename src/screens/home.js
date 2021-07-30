@@ -46,29 +46,35 @@ const Home = (props) => {
         <NavbarBeforeSignUp page="/" />
       )}
       {/* build actual products */}
-      
+
       <div className="row container-fluid">
         {/* left side */}
-        <div className="col-6">
+        <div className="col-8">
           <div className="heading-starting">
             Prepare for your Product Manager career
           </div>
-          <div className="text-block">
-          Prepare for your Interviews and get tips from Industry's best MENTORS!
-          </div>
-          <div className="text-block text-1">
-          Get access to curated resources for your for your PRODUCT MANAGEMENT career.
-          </div>
-          <div className="text-block text-2">
-          No session fee for the first 50 bookings.<b>Hurry Up!</b><br></br>
-          Visit our 'Interview Substack' to learn from experiences.
-          </div>
-
+          <i>
+            <div className="text-block">
+              Practice for your Interviews and get tips from Industry's best
+              MENTORS!
+            </div>
+            <div style={{ color: "#6d55f1" }}>
+              No session fee for the first 50 bookings.
+              <span style={{ color: "red" }}> Hurry Up!</span>
+            </div>
+            <div className="pt-3 pb-3" style={{ color: "#6d55f1" }}>
+              Get access to curated resources for your for your PRODUCT
+              MANAGEMENT career.
+            </div>
+            <div style={{ color: "#6d55f1" }}>
+              Visit our 'Interview Substack' to learn from experiences.
+            </div>
+          </i>
           <div className="row">
             <div className="col-3 ml-5 p-3">
               <Button
                 id="btn-practice"
-                className="btn"
+                className="btn-lg"
                 onClick={() => history.push("/interviewWithMentor")}
               >
                 Practice Ground
@@ -77,7 +83,7 @@ const Home = (props) => {
             <div className="col-3 ml-5 p-3">
               <Button
                 id="btn-practice"
-                className="btn"
+                className="btn-lg"
                 href="https://heypm-interview-experience.webflow.io/"
               >
                 Interview Substack
@@ -86,9 +92,6 @@ const Home = (props) => {
           </div>
         </div>
         {/* image */}
-        <div className="col-6">
-          <img id="img-job-interview" src={image} alt="job interview image" />
-        </div>
       </div>
       {/* testimonals */}
       <Testimonials />
@@ -110,46 +113,13 @@ const Home = (props) => {
             Submit Your Interview Experience
           </a>
         </div>
-
       </div>
       <div className="div-abc">
-      <div className="row container-fluid top-btn">
-      <div className="row">
-            <div className="col-3 ml-5 p-3">
-              <Button
-                id="btn-practice"
-                className="btn"
-                href="https://heypm.glideapp.io/"
-              >
-                heyPM app
-              </Button>
-              <p className="text-block">Our app to get access to resources</p>
-            </div>
-            <div className="col-3 ml-5 p-3">
-              <Button
-                id="btn-practice"
-                className="btn"
-                href="https://anchor.fm/heypm"
-              >
-                togetherVproduct
-              </Button>
-              <p className="text-block">A podcast series for PM followers</p>
-            </div>
-            <div className="col-3 ml-5 p-3">
-              <Button
-                id="btn-practice"
-                className="btn"
-                href="https://heypm.substack.com/pm-resources"
-              >
-                PM Resources
-              </Button>
-              <p className="text-block">A repository of resources for PM</p>
-            </div>
-          </div>
-          </div>
+        <div className="row container-fluid top-btn">
+          <div className="row"></div>
+        </div>
       </div>
     </div>
-    
   );
 };
 
