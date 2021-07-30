@@ -1,6 +1,6 @@
 {
   "name": "starting-page",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@syncfusion/ej2-react-calendars": "^19.2.46",
