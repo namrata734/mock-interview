@@ -63,8 +63,8 @@ const Home = (props) => {
               <span style={{ color: "red" }}> Hurry Up!</span>
             </div>
             <div className="pt-3 pb-3" style={{ color: "#6d55f1" }}>
-              Get access to curated resources for your for your PRODUCT
-              MANAGEMENT career.
+              Get access to curated resources for your PRODUCT MANAGEMENT
+              career.
             </div>
             <div style={{ color: "#6d55f1" }}>
               Visit our 'Interview Substack' to learn from experiences.
