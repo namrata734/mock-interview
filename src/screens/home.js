@@ -5,7 +5,7 @@ import NavbarBrand from "../components/navbarBrand";
 import Testimonials from "../components/testimonials";
 import { useHistory } from "react-router-dom";
 import NavbarAfterSignUp from "../components/navbarAfterSignUp";
-import image from "../assets/home.png";
+import image from "../assets/home.jpeg";
 
 const Home = (props) => {
   console.log("entered home");
@@ -49,7 +49,7 @@ const Home = (props) => {
 
       <div className="row container-fluid">
         {/* left side */}
-        <div className="col-10">
+        <div className="col-8">
           <div className="heading-starting">
             Prepare for your Product Manager career
           </div>
@@ -70,7 +70,7 @@ const Home = (props) => {
               Visit our 'Interview Substack' to learn from experiences.
             </div>
           </i>
-          <div className="row">
+          <div className="row flex">
             <div className="col-3 ml-5 p-3">
               <Button
                 id="btn-practice"
@@ -92,6 +92,9 @@ const Home = (props) => {
           </div>
         </div>
         {/* image */}
+        <div className="col-4">
+          <img id="img-job-interview" src={image} />
+        </div>
       </div>
       {/* testimonals */}
       <Testimonials />

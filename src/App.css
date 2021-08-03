@@ -14,24 +14,22 @@
   text-align: center;
   border-radius: 5px;
 }
-.top-btn{
+.top-btn {
   margin-bottom: 30px;
 }
-.div-abc{
+.div-abc {
   margin-left: 20p;
 }
 
-
 /*bottom buttons*/
-.abc-1{
+.abc-1 {
   padding-top: 30px;
 }
-.abc-2{
+.abc-2 {
   margin-left: 100px;
   text-decoration-line: underline;
   font-size: 18px;
 }
-
 
 /* navbar span */
 .span {
@@ -53,16 +51,16 @@
 
 .text-block {
   padding-bottom: 10px;
-  color: #5A54E0;
+  color: #5a54e0;
   text-align: left;
   font-family: poppins;
   font-size: 16px;
 }
-.text-1{
+.text-1 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.text-2{
+.text-2 {
   padding-bottom: 20px;
 }
 #interview-with-mentor,
@@ -71,10 +69,11 @@
   font-family: Poppins;
 }
 #img-job-interview {
-  width: 393.83px;
-  height: 295.37px;
-  left: 662.32px;
-  top: 98.39px;
+  width: 400px;
+  height: 300px;
+  left: 660px;
+  top: 100px;
+  border-radius: 5%;
 }
 
 /* testimonals */
@@ -85,7 +84,7 @@
   /*background: rgba(6, 204, 171, 0.37);*/
   border-radius: 10px;
 }
-.image-abc{
+.image-abc {
   padding-top: 50 px;
   padding-left: 100px;
   height: 300px;
@@ -115,7 +114,6 @@
   height: 70px;
   border-radius: 50%;
 }
-
 
 /* Column container */
 .row {
@@ -322,4 +320,3 @@ body {
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
 }
-

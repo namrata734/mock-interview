@@ -40,13 +40,17 @@ function NavbarAfterSignUp({ setAuth }) {
             variant="outline-secondary"
             id="dropdown-menu-align-right"
           >
-            <Dropdown.Item onClick={() => history.push("/interviewWithMentor")}>
+            <Dropdown.Item eventKey="1" tag="a" href="/interviewWithMentor">
               Practice Ground
             </Dropdown.Item>
-            <Dropdown.Item href="https://heypm-interview-experience.webflow.io/">
+            <Dropdown.Item
+              eventKey="2"
+              tag="b"
+              href="https://heypm-interview-experience.webflow.io/"
+            >
               Interview Substack
             </Dropdown.Item>
-            <Dropdown.Item eventKey="4">
+            <Dropdown.Item eventKey="3">
               <Button
                 style={{ minWidth: "180px" }}
                 onClick={((e) => logout(e), () => history.push("/"))}
